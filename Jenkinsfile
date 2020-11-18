@@ -18,8 +18,10 @@ pipeline {
         CI = 'true'
       }
       steps {
-        echo 'hello'
-        echo 'fuck'
+        sh 'chmod +x ./jenkins/scripts/test.sh'
+        sh 'ls -lhart'
+        sh 'ls -lhart jenkins/scripts/'
+        sh './jenkins/scripts/test.sh'
       }
     }
 
