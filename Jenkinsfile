@@ -18,7 +18,8 @@ pipeline {
         CI = 'true'
       }
       steps {
-        sh './jenkins/scripts/test.sh'
+        echo 'hello'
+        echo 'fuck'
       }
     }
 
